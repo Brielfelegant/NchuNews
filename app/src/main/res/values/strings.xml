@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="list_item_left_button">Left</string>
+    <string name="list_item_right_button">Right</string>
+
+</resources>

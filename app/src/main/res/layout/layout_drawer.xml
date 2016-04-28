@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ioniconview="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="@dimen/drawer_width"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:fitsSystemWindows="true"
     >
     <ImageView
         android:id="@+id/header_img"
@@ -14,7 +13,6 @@
         android:layout_height="@dimen/drawer_header_height"
         android:src="@drawable/background_drawer_header"
         android:scaleType="centerCrop"
-
         />
     <TextView
         android:layout_width="wrap_content"
@@ -40,62 +38,60 @@
             android:orientation="vertical"
             android:layout_marginTop="@dimen/view_margin">
             <RelativeLayout
-                android:id="@+id/drawer_item_share"
+                android:id="@+id/userinfo"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/list_item_height"
                 android:background="@drawable/view_click_state">
-                <!-- <be.webelite.ion.IconView
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:layout_centerVertical="true"
-                     android:layout_marginLeft="@dimen/text_margin"
-                     android:layout_marginStart="@dimen/text_margin"
-                     android:textColor="?attr/colorPrimary"
-                     android:textSize="@dimen/drawer_icon_size"
-                     app:name="ion_heart"
-                     />-->
+
                 <TextView
-                    android:text="分享应用"
+                    android:text="个人中心"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/list_item_height"
-                    android:layout_marginLeft="@dimen/menu_margin_left"
-                    android:layout_marginRight="@dimen/text_margin"
-                    android:layout_marginStart="@dimen/text_margin"
-                    android:layout_marginEnd="@dimen/text_margin"
                     android:textSize="@dimen/text_size_normal"
                     android:textColor="@color/primary_text"
                     android:gravity="center_vertical"
 
-                    />
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/drawer_item_share"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@drawable/view_click_state">
+
+                <TextView
+                    android:text="分享应用"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_height"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/primary_text"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginLeft="47dp"
+                    android:layout_marginStart="47dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/drawer_item_about"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/list_item_height"
                 android:background="@drawable/view_click_state">
-                <!--<be.webelite.ion.IconView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:name="ion_social_github"
-                    android:textSize="@dimen/drawer_icon_size"
-                    android:textColor="?attr/colorPrimary"
-                    android:layout_marginLeft="@dimen/text_margin"
-                    android:layout_marginStart="@dimen/text_margin"
-                    android:layout_centerVertical="true"
-                    />-->
+
                 <TextView
                     android:text="关于"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/list_item_height"
-                    android:layout_marginLeft="@dimen/menu_margin_left"
-                    android:layout_marginRight="@dimen/text_margin"
-                    android:layout_marginStart="@dimen/text_margin"
-                    android:layout_marginEnd="@dimen/text_margin"
                     android:textSize="@dimen/text_size_normal"
                     android:textColor="@color/primary_text"
                     android:gravity="center_vertical"
-                    />
+
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_alignParentTop="true" />
             </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 
@@ -107,20 +103,11 @@
         android:background="@color/light_primary_color"
         android:layout_alignParentBottom="true"
         >
-        <!-- <be.webelite.ion.IconView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             app:name="ion_gear_b"
-             android:textSize="@dimen/drawer_icon_size"
-             android:textColor="?attr/colorPrimary"
-             android:layout_marginLeft="@dimen/text_margin"
-             android:layout_marginStart="@dimen/text_margin"
-             android:layout_centerVertical="true"
-             />-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="设置"
+            android:text="退出"
             android:textSize="@dimen/text_size_normal"
             android:layout_marginLeft="@dimen/menu_margin_left"
             android:layout_marginStart="@dimen/menu_margin_left"

@@ -4,5 +4,10 @@
 
     <string name="list_item_left_button">Left</string>
     <string name="list_item_right_button">Right</string>
+    <string name="username">用户名：</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="password">密码：</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="about">关于</string>
 
 </resources>

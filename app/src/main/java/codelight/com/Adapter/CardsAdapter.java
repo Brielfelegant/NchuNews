@@ -1,4 +1,4 @@
-package codelight.com.nchunews;
+package codelight.com.Adapter;
 
 /**
  * Created by zouziyang on 2016/4/22.

@@ -1,8 +1,11 @@
-package codelight.com.nchunews;
+package codelight.com.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import codelight.com.Fragment.PageFragment;
+
 /**
  * Created by zouziyang on 2016/4/22.
  */

@@ -1,4 +1,4 @@
-package codelight.com.nchunews;
+package codelight.com.Fragment;
 
 /**
  * Created by zouziyang on 2016/4/22.
@@ -14,6 +14,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import codelight.com.Adapter.CardsAdapter;
+import codelight.com.Adapter.R;
 
 /**
  * Created by zouziyang on 15/11/26.

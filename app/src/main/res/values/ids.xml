@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login_username_ll" type="id">username</item>
+    <item name="login_account_et" type="id" />
+    <item name="login_password_cet" type="id" />
+</resources>

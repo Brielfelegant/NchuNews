@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="codelight.com.nchunews">
+    package="codelight.com.Adapter">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name="codelight.com.Activity.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -16,6 +16,20 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name="codelight.com.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name="codelight.com.Activity.RegisterActivity"
+            android:label="注册"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="codelight.com.Activity.AboutActivity"
+            android:label="关于"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

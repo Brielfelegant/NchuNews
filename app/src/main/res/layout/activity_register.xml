@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户注册"
+
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/register_username"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_margin="10.0dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_edittext_selector"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="用户："
+            android:textSize="18.0sp" />
+
+        <codelight.com.widget.ClearEditText
+            android:id="@+id/username"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_edittext_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="密码："
+            android:textSize="18.0sp" />
+
+        <codelight.com.widget.ClearEditText
+            android:id="@+id/password"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:inputType="textPassword"
+            android:orientation="horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_edittext_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:textSize="18.0sp"
+            android:text="性别：" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="false"
+            android:layout_weight="0.53" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_weight="0.50" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_edittext_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="电话："
+            android:textSize="18.0sp" />
+
+        <codelight.com.widget.ClearEditText
+            android:id="@+id/phoneNum"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_edittext_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="邮箱："
+            android:textSize="18.0sp" />
+
+        <codelight.com.widget.ClearEditText
+            android:id="@+id/email"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:id="@+id/save"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="53dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/cancel"
+            android:layout_alignTop="@+id/save"
+            android:layout_toRightOf="@+id/save"
+            android:layout_toEndOf="@+id/save"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp" />
+    </RelativeLayout>
+
+</LinearLayout>

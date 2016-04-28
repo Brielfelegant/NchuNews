@@ -1,4 +1,4 @@
-package codelight.com.nchunews;
+package codelight.com.Adapter;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

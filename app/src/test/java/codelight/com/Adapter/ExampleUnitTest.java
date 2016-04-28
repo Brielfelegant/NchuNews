@@ -1,4 +1,4 @@
-package codelight.com.nchunews;
+package codelight.com.Adapter;
 
 import org.junit.Test;
 

@@ -26,14 +26,11 @@ import cz.msebera.android.httpclient.Header;
  */
 public class LoginActivity extends AppCompatActivity {
 
-
-
     private Button Login;
     private Button Register;
 
     private TextView username;
     private TextView password;
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

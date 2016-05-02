@@ -9,6 +9,7 @@ import com.loopj.android.http.RequestParams;
  */
 public class NewsClient {
 
+
     private static final String BASE_URL = "http://192.168.1.103:8080";
 
     private static AsyncHttpClient client = new AsyncHttpClient();

@@ -100,7 +100,6 @@
             android:layout_height="wrap_content"
             android:text="男"
             android:checked="false" />
-
         <RadioButton
             android:layout_width="130dp"
             android:layout_height="wrap_content"

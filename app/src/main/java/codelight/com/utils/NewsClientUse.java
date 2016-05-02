@@ -11,6 +11,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class NewsClientUse {
 
+
+
     public void getJson(String url,RequestParams params) throws JSONException {
 
         NewsClient.get(url, params, new JsonHttpResponseHandler() {

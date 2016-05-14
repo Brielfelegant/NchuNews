@@ -7,7 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_news_weather"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -32,6 +32,18 @@
         </activity>
         <activity android:name="codelight.com.Activity.AboutActivity"
             android:label="关于"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="codelight.com.Activity.UserInfoActivity"
+            android:label="个人信息"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="codelight.com.Activity.MessageActivity"
+            android:label="留言信息"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="codelight.com.Activity.NewsViewActivity"
+            android:label="新闻浏览"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

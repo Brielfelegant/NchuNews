@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                 //Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 //startActivity(intent);
                 try {
-                    System.out.println("Begin");
+//                    System.out.println("Begin");
                     checklogin(username.getText().toString(),password.getText().toString());
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -57,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -71,11 +72,16 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
 
-                //System.out.println(response.toString());
+                System.out.println(response.toString());
                 if(response.isNull("msg"))
                 {
                     Toast.makeText(getApplicationContext(), "登录成功!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    try {
+                        intent.putExtra("Uid",response.getString("user_id"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     startActivity(intent);
                     finish();
                 }else{
@@ -83,8 +89,8 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
             }
-            public void onFailure(int statusCode, Header[] headers, JSONObject response, Throwable
-                    error) {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String errorResponse, Throwable error){
                 System.out.println("Wrong");
                 System.out.println(statusCode);
                 Toast.makeText(getApplicationContext(), "网络连接错误!", Toast.LENGTH_SHORT).show();

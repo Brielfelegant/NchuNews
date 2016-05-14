@@ -11,7 +11,7 @@
 
     <color name="light_grey">#f0f0f0</color>
     <color name="super_light_grey">#f6f6f6</color>
-
+    <color name="dark">#FF222222</color>
     <color name="white">#FFFFFF</color>
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#727272</color>

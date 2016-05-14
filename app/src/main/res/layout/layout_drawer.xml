@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ioniconview="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:orientation="vertical"
     android:layout_width="@dimen/drawer_width"
     android:layout_height="match_parent"
-    android:layout_gravity="start"
-    >
+    android:layout_gravity="start">
+
+
     <ImageView
         android:id="@+id/header_img"
         android:layout_width="match_parent"
         android:layout_height="@dimen/drawer_header_height"
-        android:src="@drawable/background_drawer_header"
+        android:src="@drawable/background"
         android:scaleType="centerCrop"
         />
     <TextView
@@ -25,6 +25,7 @@
         android:layout_marginLeft="@dimen/text_margin"
         android:layout_marginStart="@dimen/text_margin"
         />
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,7 +45,7 @@
                 android:background="@drawable/view_click_state">
 
                 <TextView
-                    android:text="个人中心"
+                    android:text="个人信息"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/list_item_height"
                     android:textSize="@dimen/text_size_normal"
@@ -56,13 +57,13 @@
                     android:layout_alignParentTop="true" />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/drawer_item_share"
+                android:id="@+id/drawer_item_message"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/list_item_height"
                 android:background="@drawable/view_click_state">
 
                 <TextView
-                    android:text="分享应用"
+                    android:text="留言信息"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/list_item_height"
                     android:textSize="@dimen/text_size_normal"
@@ -96,7 +97,7 @@
     </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/bottom_drawer"
+        android:id="@+id/bottom_drawer_exit"
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_height"
         android:orientation="horizontal"

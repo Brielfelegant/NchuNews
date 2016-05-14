@@ -27,7 +27,7 @@
                     android:layout_width="@dimen/about_icon_size"
                     android:layout_height="@dimen/about_icon_size"
                     android:layout_margin="@dimen/view_margin"
-                    android:src="@drawable/ic_suesnews"/>
+                    android:src="@drawable/ic_news_weather"/>
                 <RelativeLayout
                     android:id="@+id/description"
                     android:layout_width="match_parent"
@@ -65,39 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/view_margin"
                 android:textSize="@dimen/text_size_normal"
-                android:text="本应用是一个符合 Google MaterialDesign 规范的简单校园新闻客户端"
-                />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/divider_height"
-                android:layout_marginLeft="@dimen/view_margin"
-                android:layout_marginRight="@dimen/view_margin"
-                android:layout_alignTop="@+id/dateTextView"
-                android:background="@color/divider_color"
-                />
-            <TextView
-                android:id="@+id/title_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/view_margin"
-                android:textSize="@dimen/text_size_title"
-                android:text="联系我："
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/view_margin"
-                android:textSize="@dimen/text_size_normal"
-                android:text="此应用为熟悉最新设计规范以及新开发环境所做，源代码开源，GitHub地址：https://github.com/sues-lee/SuesNews 欢迎大家Star"
-                android:autoLink="all|web"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/view_margin"
-                android:textSize="@dimen/text_size_normal"
-                android:text="如果您喜欢本应用或有任何意见或建议，可通过 “设置”-“意见反馈”与我进行沟通，或者发送邮件至 lixu9527@gmail.com,感谢您的支持. "
-                android:autoLink="all|web"
+                android:text="本应用是一个简单新闻客户端,用户可以登录,注册,查看自己的消息,阅读新闻的APP"
                 />
 
         </LinearLayout>

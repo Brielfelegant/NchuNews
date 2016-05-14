@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <include
+        layout="@layout/common_toolbar"/>
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="50dip"
@@ -98,8 +101,9 @@
         <RadioButton
             android:layout_width="114dp"
             android:layout_height="wrap_content"
+            android:id="@+id/radioButton1"
             android:text="男"
-            android:checked="false" />
+            android:checked="true" />
         <RadioButton
             android:layout_width="130dp"
             android:layout_height="wrap_content"
